@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#070707">
+  <meta name="description" content="Tanat — Cybersecurity student at Astana IT University.">
+  <title>TANAT // Cybersecurity</title>
+  <style>
+    :root{
+      --bg:#070707;
+      --card:#0e0e0e;
+      --line:#242424;
+      --text:#f4f4f4;
+      --muted:#8d8d8d;
+      --accent:#ffffff;
+    }
+
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+
+    body{
+      margin:0;
+      min-height:100vh;
+      background:
+        radial-gradient(circle at 50% -10%, #242424 0, transparent 38%),
+        var(--bg);
+      color:var(--text);
+      font-family:-apple-system,BlinkMacSystemFont,"SF Pro Display","Segoe UI",sans-serif;
+      display:flex;
+      justify-content:center;
+      padding:24px 16px 40px;
+    }
+
+    .page{width:100%;max-width:430px}
+
+    .topbar{
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      color:#666;
+      font-size:11px;
+      letter-spacing:2px;
+      text-transform:uppercase;
+      margin:2px 4px 28px;
+    }
+
+    .status{
+      display:flex;
+      gap:7px;
+      align-items:center;
+    }
+
+    .dot{
+      width:7px;height:7px;border-radius:50%;
+      background:#fff;
+      box-shadow:0 0 12px rgba(255,255,255,.8);
+    }
+
+    .hero{text-align:center;padding:8px 0 24px}
+
+    .avatar{
+      width:88px;height:88px;
+      margin:0 auto 18px;
+      border:1px solid #353535;
+      border-radius:50%;
+      display:grid;
+      place-items:center;
+      background:#111;
+      font-weight:800;
+      font-size:28px;
+      letter-spacing:-2px;
+      box-shadow:0 12px 40px rgba(0,0,0,.45);
+    }
+
+    h1{
+      margin:0;
+      font-size:42px;
+      line-height:1;
+      letter-spacing:-2.5px;
+      font-weight:850;
+    }
+
+    .role{
+      margin:12px 0 0;
+      color:#a8a8a8;
+      font-size:13px;
+      letter-spacing:2.4px;
+      text-transform:uppercase;
+    }
+
+    .location{
+      margin-top:8px;
+      color:#666;
+      font-size:12px;
+    }
+
+    .links{
+      display:grid;
+      gap:10px;
+    }
+
+    .link{
+      text-decoration:none;
+      color:var(--text);
+      border:1px solid var(--line);
+      background:linear-gradient(180deg,#111,#0b0b0b);
+      min-height:58px;
+      padding:0 17px;
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      border-radius:14px;
+      transition:.18s ease;
+    }
+
+    .link:hover{
+      transform:translateY(-2px);
+      border-color:#4a4a4a;
+      background:#151515;
+    }
+
+    .left{display:flex;align-items:center;gap:13px}
+    .icon{
+      width:30px;height:30px;
+      display:grid;place-items:center;
+      border:1px solid #303030;
+      border-radius:9px;
+      font-size:12px;
+      font-weight:800;
+      color:#ddd;
+    }
+
+    .label{font-size:14px;font-weight:650}
+    .handle{font-size:11px;color:#707070;margin-top:3px}
+    .arrow{color:#666;font-size:18px}
+
+    .terminal{
+      margin-top:18px;
+      padding:17px;
+      border:1px solid var(--line);
+      border-radius:14px;
+      background:#0b0b0b;
+      font-family:ui-monospace,SFMono-Regular,Menlo,monospace;
+      font-size:11px;
+      line-height:1.7;
+      color:#9d9d9d;
+    }
+
+    .terminal .green{color:#e8e8e8}
+    .terminal .prompt{color:#666}
+
+    footer{
+      text-align:center;
+      margin-top:24px;
+      color:#4e4e4e;
+      font-size:10px;
+      letter-spacing:1.8px;
+      text-transform:uppercase;
+    }
+
+    @media (prefers-reduced-motion:reduce){
+      .link{transition:none}
+    }
+  </style>
+</head>
+
+<body>
+  <main class="page">
+    <div class="topbar">
+      <span>NFC IDENTITY</span>
+      <span class="status"><i class="dot"></i> ONLINE</span>
+    </div>
+
+    <section class="hero">
+      <div class="avatar">TM</div>
+      <h1>TANAT</h1>
+      <p class="role">Cybersecurity Student</p>
+      <p class="location">Astana IT University · Kazakhstan 🇰🇿</p>
+    </section>
+
+    <nav class="links" aria-label="Social links">
+      <a class="link" href="https://instagram.com/tann.makss" target="_blank" rel="noopener">
+        <span class="left">
+          <span class="icon">IG</span>
+          <span>
+            <span class="label">Instagram</span>
+            <span class="handle">@tann.makss</span>
+          </span>
+        </span>
+        <span class="arrow">↗</span>
+      </a>
+
+      <!-- Replace these # links with your real profiles -->
+      <a class="link" href="#" onclick="return false;">
+        <span class="left">
+          <span class="icon">TG</span>
+          <span>
+            <span class="label">Telegram</span>
+            <span class="handle">@your_username</span>
+          </span>
+        </span>
+        <span class="arrow">↗</span>
+      </a>
+
+      <a class="link" href="#" onclick="return false;">
+        <span class="left">
+          <span class="icon">GH</span>
+          <span>
+            <span class="label">GitHub</span>
+            <span class="handle">github.com/yourusername</span>
+          </span>
+        </span>
+        <span class="arrow">↗</span>
+      </a>
+
+      <a class="link" href="#" onclick="return false;">
+        <span class="left">
+          <span class="icon">in</span>
+          <span>
+            <span class="label">LinkedIn</span>
+            <span class="handle">linkedin.com/in/yourprofile</span>
+          </span>
+        </span>
+        <span class="arrow">↗</span>
+      </a>
+    </nav>
+
+    <div class="terminal">
+      <div><span class="prompt">$</span> whoami</div>
+      <div class="green">tanat // cybersecurity</div>
+      <div><span class="prompt">$</span> location</div>
+      <div class="green">ASTANA, KZ</div>
+      <div><span class="prompt">$</span> status</div>
+      <div class="green">building + learning</div>
+    </div>
+
+    <footer>scan · connect · remember</footer>
+  </main>
+</body>
+</html>
